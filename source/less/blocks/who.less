@@ -1,0 +1,54 @@
+.who {
+    padding: 0 20px 0 20px;
+    
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    &__title {
+        font-family: Exo2, sans-serif;
+        color: @vblackcolor;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        max-width: 345px;
+    }
+
+    &__desc-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    &__desc-title {
+        line-height: 24px;
+        font-family: Exo2, sans-serif;
+        color: @vblackcolor;
+    }
+
+    &__desc {
+        margin: 0;
+        margin-top: -10px;
+        margin-left: 50px;
+        line-height: 24px;
+        color: @vgreycolor;
+    }
+
+    &__image {
+        width: 100%;
+        margin-top: 30px;
+    }
+}

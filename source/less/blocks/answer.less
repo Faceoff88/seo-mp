@@ -1,0 +1,60 @@
+.answer {
+    padding: 0 20px 0 20px;
+
+    &__title {
+        padding: 0;
+        margin-top: 50px;
+        font-family: Exo2, sans-serif;
+        color: @vblackcolor;
+    }
+
+    &__list {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    &__item {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__image-wrapper {
+        position: relative;
+        margin-right: 20px;
+        z-index: 1;
+        width: 40px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 5px;
+            width: 30px;
+            height: 30px;
+            background-image: url(../img/minidorange@2x.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            filter: drop-shadow(0 15px 10px rgba(0, 0, 0, 0.75));
+            z-index: 3;
+        }
+    }
+
+    &__dot {
+        width: 40px;
+        height: 40px;
+        z-index: 2;
+    }
+
+    &__text {
+        font-family: Inter, sans-serif;
+        color: @vblackcolor;
+        line-height: 24px;
+    }
+}
