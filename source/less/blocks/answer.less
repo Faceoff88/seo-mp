@@ -16,7 +16,7 @@
     &__item {
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
     }
 
@@ -24,11 +24,6 @@
         position: relative;
         margin-right: 20px;
         z-index: 1;
-        width: 40px;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         
         &::before {
             content: '';
@@ -46,6 +41,7 @@
         }
     }
 
+
     &__dot {
         width: 40px;
         height: 40px;
@@ -56,5 +52,25 @@
         font-family: Inter, sans-serif;
         color: @vblackcolor;
         line-height: 24px;
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .answer {
+        &__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            width: 48%;
+            height: 120px;
+            align-items: start;
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            margin: 0; 
+        }
     }
 }

@@ -53,3 +53,19 @@
         height: 450px;
     }
 }
+
+@media (min-width: @tablet-width) {
+    .page-footer {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__top,
+        &__bottom {
+            width: 45%;
+
+        }
+    }
+}
