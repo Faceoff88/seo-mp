@@ -69,3 +69,31 @@
         }
     }
 }
+
+@media (min-width: @desktop-width) {
+    .page-footer {
+        padding: 0;
+        padding-bottom: 100px;
+
+        &__wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 50px;
+            flex-direction: column;
+            align-items: start;
+        }
+
+        &__bottom {
+            width: 100%;
+        }
+
+        .top-contacts {
+
+            &__text {
+                justify-content: space-between;
+            }
+        }
+
+        
+    }
+}
