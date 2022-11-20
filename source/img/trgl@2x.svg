@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="108" viewBox="0 0 40 54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="trgl" class="cls-1" d="M372,5177l20,54H352Z" transform="translate(-352 -5177)"/>
+</svg>

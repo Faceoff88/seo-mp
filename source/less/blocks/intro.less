@@ -50,3 +50,23 @@
         
     }
 }
+
+@media (min-width: @desktop-width) {
+    .intro {
+        background-image: url(../img/intro-bg-desktop@2x.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0;
+        height: 90vh;
+
+        &__wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            
+        }
+    }
+}
