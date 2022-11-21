@@ -6,6 +6,7 @@
         font-family: Exo2, sans-serif;
         line-height: 30px;
         color: #ffffff;
+        text-transform: none;
     }
 
     &__callback {
@@ -47,10 +48,86 @@
         }
     }
 
+    &__nav {
+        display: none;
+    }
+
+    &__logo-title {
+        width: 200px;
+        height: 80px;
+        border-radius: 10px;
+        background: linear-gradient(45deg, @orangecolor 33%, @redcolor 66%, @wbcolor);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-decoration: none;
+        font-family: Exo2, sans-serif;
+        font-size: 52px;
+        font-weight: 900;
+        color: #ffffff;
+        letter-spacing: -4px;
+        text-shadow: 1px 1px darken(@orangecolor, 5%),
+        2px 2px darken(@orangecolor, 5%),
+        3px 3px darken(@orangecolor, 5%),
+        4px 4px darken(@orangecolor, 5%),
+        5px 5px darken(@orangecolor, 5%),
+        6px 6px darken(@orangecolor, 5%),
+        7px 7px darken(@orangecolor, 5%),
+        8px 8px darken(@orangecolor, 5%),
+        9px 9px darken(@orangecolor, 5%),
+        10px 10px darken(@orangecolor, 5%),
+        11px 11px darken(@orangecolor, 5%),
+        12px 12px darken(@orangecolor, 5%),
+        13px 13px darken(@orangecolor, 5%),
+        14px 14px darken(@orangecolor, 5%),
+        15px 15px darken(@orangecolor, 5%),
+        16px 16px darken(@orangecolor, 5%),
+        17px 17px darken(@orangecolor, 5%),
+        18px 18px darken(@orangecolor, 5%),
+        19px 19px darken(@orangecolor, 5%),
+        20px 20px darken(@orangecolor, 5%),
+        21px 21px darken(@orangecolor, 5%),
+        22px 22px darken(@orangecolor, 5%),
+        23px 23px darken(@orangecolor, 5%),
+        24px 24px darken(@orangecolor, 5%),
+        25px 25px darken(@orangecolor, 5%),
+        26px 26px darken(@orangecolor, 5%),
+        27px 27px darken(@orangecolor, 5%),
+        28px 28px darken(@orangecolor, 5%),
+        29px 29px darken(@orangecolor, 5%),
+        30px 30px darken(@orangecolor, 5%),
+        31px 31px darken(@orangecolor, 5%),
+        32px 32px darken(@orangecolor, 5%),
+        33px 33px darken(@orangecolor, 5%),
+        34px 34px darken(@orangecolor, 5%),
+        35px 35px darken(@orangecolor, 5%),
+        36px 36px darken(@orangecolor, 5%),
+        37px 37px darken(@orangecolor, 5%),
+        38px 38px darken(@orangecolor, 5%),
+        39px 39px darken(@orangecolor, 5%),
+        40px 40px darken(@orangecolor, 5%),
+        41px 41px darken(@orangecolor, 5%),
+        42px 42px darken(@orangecolor, 5%),
+        43px 43px darken(@orangecolor, 5%),
+        44px 44px darken(@orangecolor, 5%),
+        45px 45px darken(@orangecolor, 5%),
+        46px 46px darken(@orangecolor, 5%),
+        47px 47px darken(@orangecolor, 5%),
+        48px 48px darken(@orangecolor, 5%);
+        padding: 0;
+        margin: 0;
+    }
+
     .ya-map {
         margin-top: 50px;
         width: 100%;
         height: 450px;
+    }
+
+    &__bottom {
+        padding-top: 30px;
     }
 }
 
@@ -83,8 +160,89 @@
             align-items: start;
         }
 
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 70px;
+        }
+
+        &__logo-title {
+            width: 300px;
+            height: 120px;
+            border-radius: 10px;
+            background: linear-gradient(45deg, @orangecolor 33%, @redcolor 66%, @wbcolor);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-decoration: none;
+            font-family: Exo2, sans-serif;
+            font-size: 78px;
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: -4px;
+            text-shadow: 1px 1px darken(@orangecolor, 5%),
+            2px 2px darken(@orangecolor, 5%),
+            3px 3px darken(@orangecolor, 5%),
+            4px 4px darken(@orangecolor, 5%),
+            5px 5px darken(@orangecolor, 5%),
+            6px 6px darken(@orangecolor, 5%),
+            7px 7px darken(@orangecolor, 5%),
+            8px 8px darken(@orangecolor, 5%),
+            9px 9px darken(@orangecolor, 5%),
+            10px 10px darken(@orangecolor, 5%),
+            11px 11px darken(@orangecolor, 5%),
+            12px 12px darken(@orangecolor, 5%),
+            13px 13px darken(@orangecolor, 5%),
+            14px 14px darken(@orangecolor, 5%),
+            15px 15px darken(@orangecolor, 5%),
+            16px 16px darken(@orangecolor, 5%),
+            17px 17px darken(@orangecolor, 5%),
+            18px 18px darken(@orangecolor, 5%),
+            19px 19px darken(@orangecolor, 5%),
+            20px 20px darken(@orangecolor, 5%),
+            21px 21px darken(@orangecolor, 5%),
+            22px 22px darken(@orangecolor, 5%),
+            23px 23px darken(@orangecolor, 5%),
+            24px 24px darken(@orangecolor, 5%),
+            25px 25px darken(@orangecolor, 5%),
+            26px 26px darken(@orangecolor, 5%),
+            27px 27px darken(@orangecolor, 5%),
+            28px 28px darken(@orangecolor, 5%),
+            29px 29px darken(@orangecolor, 5%),
+            30px 30px darken(@orangecolor, 5%),
+            31px 31px darken(@orangecolor, 5%),
+            32px 32px darken(@orangecolor, 5%),
+            33px 33px darken(@orangecolor, 5%),
+            34px 34px darken(@orangecolor, 5%),
+            35px 35px darken(@orangecolor, 5%),
+            36px 36px darken(@orangecolor, 5%),
+            37px 37px darken(@orangecolor, 5%),
+            38px 38px darken(@orangecolor, 5%),
+            39px 39px darken(@orangecolor, 5%),
+            40px 40px darken(@orangecolor, 5%),
+            41px 41px darken(@orangecolor, 5%),
+            42px 42px darken(@orangecolor, 5%),
+            43px 43px darken(@orangecolor, 5%),
+            44px 44px darken(@orangecolor, 5%),
+            45px 45px darken(@orangecolor, 5%),
+            46px 46px darken(@orangecolor, 5%),
+            47px 47px darken(@orangecolor, 5%),
+            48px 48px darken(@orangecolor, 5%);
+            padding: 0;
+            margin: 0;
+        }
+
+        &__title {
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+
         &__bottom {
             width: 100%;
+            padding-top: 0;
         }
 
         .top-contacts {
@@ -94,6 +252,63 @@
             }
         }
 
-        
+        &__nav {
+            display: block;
+            width: 60%;
+        }
+
+        &__nav-list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__nav-item {
+            position: relative;
+        }
+
+        &__nav-link {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #ffffff;
+            
+            &:hover,
+            &:focus {
+                color: @orangecolor;
+                background: linear-gradient(45deg, @orangecolor 33%, @redcolor 66%, @wbcolor);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: ease-in-out 0.3s;
+            }
+        }
+
+        &__callback {
+            margin-top: 30px;
+        }
+    }
+
+    .footer-submenu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        width: max-content;
+
+        &__item {
+            margin-bottom: 10px;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: #ffffff;
+
+            &:hover,
+            &:focus {
+                color: @orangecolor;
+                background: linear-gradient(45deg, @orangecolor 33%, @redcolor 66%, @wbcolor);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transition: ease-in-out 0.3s;
+            }
+        }
     }
 }
