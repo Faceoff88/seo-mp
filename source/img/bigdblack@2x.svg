@@ -1,17 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 30 30">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="url(#MyGradient)" width="60" height="60" viewBox="0 0 30 30">
   <defs>
-    <style>
-      .cls-1 {
-        fill: #f94747;
-        fill-rule: evenodd;
-        filter: url(#filter);
-      }
-    </style>
+    <linearGradient id="MyGradient">
+    <stop offset="5%" stop-color="#BC51DF" />
+    <stop offset="95%" stop-color="#0069FF" />
+  </linearGradient>
     <filter id="filter" x="20" y="1021" width="30" height="30" filterUnits="userSpaceOnUse">
-      <feFlood result="flood" flood-color="#18131c"/>
+      <feFlood result="flood" flood-color="#0069FF"/>
       <feComposite result="composite" operator="in" in2="SourceGraphic"/>
       <feBlend result="blend" in2="SourceGraphic"/>
     </filter>
   </defs>
-  <path id="Фигура_324_1" data-name="Фигура 324 1" class="cls-1" d="M33.249,1021.09a15.3,15.3,0,0,0-12.732,9.94c-2.318,6.7,3.587,12.62,6.366,14.91,5.082,4.19,9.239,5.5,12.732,4.97,7.658-1.18,9.788-10.25,10.186-12.92,0.414-2.79.948-11.02-6.366-14.91A17.873,17.873,0,0,0,33.249,1021.09Z" transform="translate(-20 -1021)"/>
+  <path id="#MyGradient" data-name="Фигура 324 1" class="cls-1" d="M33.249,1021.09a15.3,15.3,0,0,0-12.732,9.94c-2.318,6.7,3.587,12.62,6.366,14.91,5.082,4.19,9.239,5.5,12.732,4.97,7.658-1.18,9.788-10.25,10.186-12.92,0.414-2.79.948-11.02-6.366-14.91A17.873,17.873,0,0,0,33.249,1021.09Z" transform="translate(-20 -1021)"/>
 </svg>

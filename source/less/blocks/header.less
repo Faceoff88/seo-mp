@@ -14,6 +14,80 @@
         padding: 0 20px 0 20px;
         
     }
+
+    &__logo-link {
+        width: 130px;
+            height: 60px;
+            border-radius: 10px;
+            background: linear-gradient(45deg, @ozoncolor 33%, @wbcolor 66%, @wbcolor);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-decoration: none;
+            font-family: Exo2, sans-serif;
+            font-size: 38px;
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: -4px;
+            text-shadow: 1px 1px darken(@wbcolor, 20%),
+            2px 2px darken(@wbcolor, 20%),
+            3px 3px darken(@wbcolor, 20%),
+            4px 4px darken(@wbcolor, 20%),
+            5px 5px darken(@wbcolor, 20%),
+            6px 6px darken(@wbcolor, 20%),
+            7px 7px darken(@wbcolor, 20%),
+            8px 8px darken(@wbcolor, 20%),
+            9px 9px darken(@wbcolor, 20%),
+            10px 10px darken(@wbcolor, 20%),
+            11px 11px darken(@wbcolor, 20%),
+            12px 12px darken(@wbcolor, 20%),
+            13px 13px darken(@wbcolor, 20%),
+            14px 14px darken(@wbcolor, 20%),
+            15px 15px darken(@wbcolor, 20%),
+            16px 16px darken(@wbcolor, 20%),
+            17px 17px darken(@wbcolor, 20%),
+            18px 18px darken(@wbcolor, 20%),
+            19px 19px darken(@wbcolor, 20%),
+            20px 20px darken(@wbcolor, 20%),
+            21px 21px darken(@wbcolor, 20%),
+            22px 22px darken(@wbcolor, 20%),
+            23px 23px darken(@wbcolor, 20%),
+            24px 24px darken(@wbcolor, 20%),
+            25px 25px darken(@wbcolor, 20%),
+            26px 26px darken(@wbcolor, 20%),
+            27px 27px darken(@wbcolor, 20%),
+            28px 28px darken(@wbcolor, 20%),
+            29px 29px darken(@wbcolor, 20%),
+            30px 30px darken(@wbcolor, 20%),
+            31px 31px darken(@wbcolor, 20%),
+            32px 32px darken(@wbcolor, 20%),
+            33px 33px darken(@wbcolor, 20%),
+            34px 34px darken(@wbcolor, 20%),
+            35px 35px darken(@wbcolor, 20%),
+            36px 36px darken(@wbcolor, 20%),
+            37px 37px darken(@wbcolor, 20%),
+            38px 38px darken(@wbcolor, 20%),
+            39px 39px darken(@wbcolor, 20%),
+            40px 40px darken(@wbcolor, 20%),
+            41px 41px darken(@wbcolor, 20%),
+            42px 42px darken(@wbcolor, 20%),
+            43px 43px darken(@wbcolor, 20%),
+            44px 44px darken(@wbcolor, 20%),
+            45px 45px darken(@wbcolor, 20%),
+            46px 46px darken(@wbcolor, 20%),
+            47px 47px darken(@wbcolor, 20%),
+            48px 48px darken(@wbcolor, 20%);
+            padding: 0;
+            margin: 0;
+            transition: all 0.25s ease-in-out;
+
+            &:hover {
+                text-shadow: none;
+                transition: all 0.25s ease-in-out;
+            }
+    }
 }
 
 @media (min-width: @desktop-width) {
@@ -29,16 +103,21 @@
 }
 
 .fix {
-    background-color: @vblackcolor;
+    background-color: #ffffff;
     height: 45px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     transition: all 0.25s ease-in-out;
+
+    .page-header__logo-link {
+        height: 40px;
+        transition: all 0.25s ease-in-out;
+    }
 
     .nav {
 
         .menu {
             &__link {
-                color: #ffffff;
+                color: @vblackcolor;
             }
         }
         .submenu {

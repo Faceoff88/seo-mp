@@ -1,6 +1,7 @@
 .page-footer {
     padding: 50px 20px;
     background-color: @vblackcolor;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
     &__title {
         font-family: Exo2, sans-serif;
@@ -14,24 +15,25 @@
         height: 60px;
         margin-top: 10px;
         margin-bottom: 50px;
-        background-color: @orangecolor;
+        background-color: @wbcolor-two;
         border: none;
         border-radius: 10px;
-        -webkit-box-shadow: 0 14px 28px rgba(@orangecolor, 0.25), 0 10px 10px rgba(@wbcolor, 0.22);
-        -moz-box-shadow: 0 14px 28px rgba(@orangecolor, 0.25), 0 10px 10px rgba(@wbcolor, 0.22);
-        -ms-box-shadow: 0 14px 28px rgba(@orangecolor, 0.25), 0 10px 10px rgba(@wbcolor, 0.22);
-        -o-box-shadow: 0 14px 28px rgba(@orangecolor, 0.25), 0 10px 10px rgba(@wbcolor, 0.22);
-        box-shadow: 0 14px 28px rgba(@orangecolor, 0.25), 0 10px 10px rgba(@wbcolor, 0.22);
+        -webkit-box-shadow: 0 14px 28px rgba(@orangecolor, 0.25), 0 10px 10px rgba(@wbcolor-two, 0.22);
+        -moz-box-shadow: 0 14px 28px rgba(@orangecolor, 0.25), 0 10px 10px rgba(@wbcolor-two, 0.22);
+        -ms-box-shadow: 0 14px 28px rgba(@orangecolor, 0.25), 0 10px 10px rgba(@wbcolor-two, 0.22);
+        -o-box-shadow: 0 14px 28px rgba(@orangecolor, 0.25), 0 10px 10px rgba(@wbcolor-two, 0.22);
+        box-shadow: 0 14px 28px rgba(@orangecolor, 0.25), 0 10px 10px rgba(@wbcolor-two, 0.22);
         color: #fff;
         font-family: Exo2, sans-serif;
         text-transform: uppercase;
         font-weight: 600;
         font-size: 16px;
         transition: ease 0.25s;
+        cursor: pointer;
 
         &:hover,
         &:focus {
-            background-color: lighten(@orangecolor, 5%);
+            background-color: lighten(@wbcolor, 5%);
         }
 
         &:active {
@@ -56,7 +58,7 @@
         width: 200px;
         height: 80px;
         border-radius: 10px;
-        background: linear-gradient(45deg, @orangecolor 33%, @redcolor 66%, @wbcolor);
+        background: linear-gradient(45deg, @ozoncolor 33%, @wbcolor 66%, @wbcolor);
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -68,53 +70,53 @@
         font-weight: 900;
         color: #ffffff;
         letter-spacing: -4px;
-        text-shadow: 1px 1px darken(@orangecolor, 5%),
-        2px 2px darken(@orangecolor, 5%),
-        3px 3px darken(@orangecolor, 5%),
-        4px 4px darken(@orangecolor, 5%),
-        5px 5px darken(@orangecolor, 5%),
-        6px 6px darken(@orangecolor, 5%),
-        7px 7px darken(@orangecolor, 5%),
-        8px 8px darken(@orangecolor, 5%),
-        9px 9px darken(@orangecolor, 5%),
-        10px 10px darken(@orangecolor, 5%),
-        11px 11px darken(@orangecolor, 5%),
-        12px 12px darken(@orangecolor, 5%),
-        13px 13px darken(@orangecolor, 5%),
-        14px 14px darken(@orangecolor, 5%),
-        15px 15px darken(@orangecolor, 5%),
-        16px 16px darken(@orangecolor, 5%),
-        17px 17px darken(@orangecolor, 5%),
-        18px 18px darken(@orangecolor, 5%),
-        19px 19px darken(@orangecolor, 5%),
-        20px 20px darken(@orangecolor, 5%),
-        21px 21px darken(@orangecolor, 5%),
-        22px 22px darken(@orangecolor, 5%),
-        23px 23px darken(@orangecolor, 5%),
-        24px 24px darken(@orangecolor, 5%),
-        25px 25px darken(@orangecolor, 5%),
-        26px 26px darken(@orangecolor, 5%),
-        27px 27px darken(@orangecolor, 5%),
-        28px 28px darken(@orangecolor, 5%),
-        29px 29px darken(@orangecolor, 5%),
-        30px 30px darken(@orangecolor, 5%),
-        31px 31px darken(@orangecolor, 5%),
-        32px 32px darken(@orangecolor, 5%),
-        33px 33px darken(@orangecolor, 5%),
-        34px 34px darken(@orangecolor, 5%),
-        35px 35px darken(@orangecolor, 5%),
-        36px 36px darken(@orangecolor, 5%),
-        37px 37px darken(@orangecolor, 5%),
-        38px 38px darken(@orangecolor, 5%),
-        39px 39px darken(@orangecolor, 5%),
-        40px 40px darken(@orangecolor, 5%),
-        41px 41px darken(@orangecolor, 5%),
-        42px 42px darken(@orangecolor, 5%),
-        43px 43px darken(@orangecolor, 5%),
-        44px 44px darken(@orangecolor, 5%),
-        45px 45px darken(@orangecolor, 5%),
-        46px 46px darken(@orangecolor, 5%),
-        47px 47px darken(@orangecolor, 5%),
+        text-shadow: 1px 1px darken(@wbcolor, 20%),
+        2px 2px darken(@wbcolor, 20%),
+        3px 3px darken(@wbcolor, 20%),
+        4px 4px darken(@wbcolor, 20%),
+        5px 5px darken(@wbcolor, 20%),
+        6px 6px darken(@wbcolor, 20%),
+        7px 7px darken(@wbcolor, 20%),
+        8px 8px darken(@wbcolor, 20%),
+        9px 9px darken(@wbcolor, 20%),
+        10px 10px darken(@wbcolor, 20%),
+        11px 11px darken(@wbcolor, 20%),
+        12px 12px darken(@wbcolor, 20%),
+        13px 13px darken(@wbcolor, 20%),
+        14px 14px darken(@wbcolor, 20%),
+        15px 15px darken(@wbcolor, 20%),
+        16px 16px darken(@wbcolor, 20%),
+        17px 17px darken(@wbcolor, 20%),
+        18px 18px darken(@wbcolor, 20%),
+        19px 19px darken(@wbcolor, 20%),
+        20px 20px darken(@wbcolor, 20%),
+        21px 21px darken(@wbcolor, 20%),
+        22px 22px darken(@wbcolor, 20%),
+        23px 23px darken(@wbcolor, 20%),
+        24px 24px darken(@wbcolor, 20%),
+        25px 25px darken(@wbcolor, 20%),
+        26px 26px darken(@wbcolor, 20%),
+        27px 27px darken(@wbcolor, 20%),
+        28px 28px darken(@wbcolor, 20%),
+        29px 29px darken(@wbcolor, 20%),
+        30px 30px darken(@wbcolor, 20%),
+        31px 31px darken(@wbcolor, 20%),
+        32px 32px darken(@wbcolor, 20%),
+        33px 33px darken(@wbcolor, 20%),
+        34px 34px darken(@wbcolor, 20%),
+        35px 35px darken(@wbcolor, 20%),
+        36px 36px darken(@wbcolor, 20%),
+        37px 37px darken(@wbcolor, 20%),
+        38px 38px darken(@wbcolor, 20%),
+        39px 39px darken(@wbcolor, 20%),
+        40px 40px darken(@wbcolor, 20%),
+        41px 41px darken(@wbcolor, 20%),
+        42px 42px darken(@wbcolor, 20%),
+        43px 43px darken(@wbcolor, 20%),
+        44px 44px darken(@wbcolor, 20%),
+        45px 45px darken(@wbcolor, 20%),
+        46px 46px darken(@wbcolor, 20%),
+        47px 47px darken(@wbcolor, 20%),
         48px 48px darken(@orangecolor, 5%);
         padding: 0;
         margin: 0;
@@ -171,7 +173,7 @@
             width: 300px;
             height: 120px;
             border-radius: 10px;
-            background: linear-gradient(45deg, @orangecolor 33%, @redcolor 66%, @wbcolor);
+            background: linear-gradient(45deg, @ozoncolor 33%, @wbcolor 66%, @wbcolor);
             overflow: hidden;
             display: flex;
             justify-content: center;
@@ -183,56 +185,62 @@
             font-weight: 900;
             color: #ffffff;
             letter-spacing: -4px;
-            text-shadow: 1px 1px darken(@orangecolor, 5%),
-            2px 2px darken(@orangecolor, 5%),
-            3px 3px darken(@orangecolor, 5%),
-            4px 4px darken(@orangecolor, 5%),
-            5px 5px darken(@orangecolor, 5%),
-            6px 6px darken(@orangecolor, 5%),
-            7px 7px darken(@orangecolor, 5%),
-            8px 8px darken(@orangecolor, 5%),
-            9px 9px darken(@orangecolor, 5%),
-            10px 10px darken(@orangecolor, 5%),
-            11px 11px darken(@orangecolor, 5%),
-            12px 12px darken(@orangecolor, 5%),
-            13px 13px darken(@orangecolor, 5%),
-            14px 14px darken(@orangecolor, 5%),
-            15px 15px darken(@orangecolor, 5%),
-            16px 16px darken(@orangecolor, 5%),
-            17px 17px darken(@orangecolor, 5%),
-            18px 18px darken(@orangecolor, 5%),
-            19px 19px darken(@orangecolor, 5%),
-            20px 20px darken(@orangecolor, 5%),
-            21px 21px darken(@orangecolor, 5%),
-            22px 22px darken(@orangecolor, 5%),
-            23px 23px darken(@orangecolor, 5%),
-            24px 24px darken(@orangecolor, 5%),
-            25px 25px darken(@orangecolor, 5%),
-            26px 26px darken(@orangecolor, 5%),
-            27px 27px darken(@orangecolor, 5%),
-            28px 28px darken(@orangecolor, 5%),
-            29px 29px darken(@orangecolor, 5%),
-            30px 30px darken(@orangecolor, 5%),
-            31px 31px darken(@orangecolor, 5%),
-            32px 32px darken(@orangecolor, 5%),
-            33px 33px darken(@orangecolor, 5%),
-            34px 34px darken(@orangecolor, 5%),
-            35px 35px darken(@orangecolor, 5%),
-            36px 36px darken(@orangecolor, 5%),
-            37px 37px darken(@orangecolor, 5%),
-            38px 38px darken(@orangecolor, 5%),
-            39px 39px darken(@orangecolor, 5%),
-            40px 40px darken(@orangecolor, 5%),
-            41px 41px darken(@orangecolor, 5%),
-            42px 42px darken(@orangecolor, 5%),
-            43px 43px darken(@orangecolor, 5%),
-            44px 44px darken(@orangecolor, 5%),
-            45px 45px darken(@orangecolor, 5%),
-            46px 46px darken(@orangecolor, 5%),
-            47px 47px darken(@orangecolor, 5%),
+            text-shadow: 1px 1px darken(@wbcolor, 20%),
+            2px 2px darken(@wbcolor, 20%),
+            3px 3px darken(@wbcolor, 20%),
+            4px 4px darken(@wbcolor, 20%),
+            5px 5px darken(@wbcolor, 20%),
+            6px 6px darken(@wbcolor, 20%),
+            7px 7px darken(@wbcolor, 20%),
+            8px 8px darken(@wbcolor, 20%),
+            9px 9px darken(@wbcolor, 20%),
+            10px 10px darken(@wbcolor, 20%),
+            11px 11px darken(@wbcolor, 20%),
+            12px 12px darken(@wbcolor, 20%),
+            13px 13px darken(@wbcolor, 20%),
+            14px 14px darken(@wbcolor, 20%),
+            15px 15px darken(@wbcolor, 20%),
+            16px 16px darken(@wbcolor, 20%),
+            17px 17px darken(@wbcolor, 20%),
+            18px 18px darken(@wbcolor, 20%),
+            19px 19px darken(@wbcolor, 20%),
+            20px 20px darken(@wbcolor, 20%),
+            21px 21px darken(@wbcolor, 20%),
+            22px 22px darken(@wbcolor, 20%),
+            23px 23px darken(@wbcolor, 20%),
+            24px 24px darken(@wbcolor, 20%),
+            25px 25px darken(@wbcolor, 20%),
+            26px 26px darken(@wbcolor, 20%),
+            27px 27px darken(@wbcolor, 20%),
+            28px 28px darken(@wbcolor, 20%),
+            29px 29px darken(@wbcolor, 20%),
+            30px 30px darken(@wbcolor, 20%),
+            31px 31px darken(@wbcolor, 20%),
+            32px 32px darken(@wbcolor, 20%),
+            33px 33px darken(@wbcolor, 20%),
+            34px 34px darken(@wbcolor, 20%),
+            35px 35px darken(@wbcolor, 20%),
+            36px 36px darken(@wbcolor, 20%),
+            37px 37px darken(@wbcolor, 20%),
+            38px 38px darken(@wbcolor, 20%),
+            39px 39px darken(@wbcolor, 20%),
+            40px 40px darken(@wbcolor, 20%),
+            41px 41px darken(@wbcolor, 20%),
+            42px 42px darken(@wbcolor, 20%),
+            43px 43px darken(@wbcolor, 20%),
+            44px 44px darken(@wbcolor, 20%),
+            45px 45px darken(@wbcolor, 20%),
+            46px 46px darken(@wbcolor, 20%),
+            47px 47px darken(@wbcolor, 20%),
             48px 48px darken(@orangecolor, 5%);
             padding: 0;
             margin: 0;
+            transition: all 0.25s ease-in-out;
+
+            &:hover {
+                text-shadow: none;
+                transition: all 0.25s ease-in-out;
+            }
         }
 
         &__title {
@@ -273,11 +281,11 @@
             
             &:hover,
             &:focus {
-                color: @orangecolor;
-                background: linear-gradient(45deg, @orangecolor 33%, @redcolor 66%, @wbcolor);
+                color: @wbcolor;
+                background:@gradient;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-                transition: ease-in-out 0.3s;
+                transition: ease-in-out 0.7s;
             }
         }
 
@@ -303,11 +311,11 @@
 
             &:hover,
             &:focus {
-                color: @orangecolor;
-                background: linear-gradient(45deg, @orangecolor 33%, @redcolor 66%, @wbcolor);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                transition: ease-in-out 0.3s;
+                color: @wbcolor;
+                    background:@gradient;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: ease-in-out 0.7s;
             }
         }
     }
