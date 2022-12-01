@@ -1,9 +1,17 @@
 .page-howwork {
     padding: 100px 20px 100px 20px;
 
+    &__title {
+        font-size: 24px;
+        color: @wbcolor;
+        font-family: Exo2, sans-serif;
+        margin-bottom: 50px;
+    }
+
     &__list {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 50px;
     }
 }
 
@@ -183,6 +191,48 @@
             -ms-transition: all 0.25s ease-in-out;
             -o-transition: all 0.25s ease-in-out;
             transition: all 0.25s ease-in-out;
+        }
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .audit-form {
+        &__list {
+            justify-content: space-between;
+            padding: 0 50px 0 50px;
+        }
+
+        &__item {
+            margin-bottom: 30px;
+            width: 45%;
+        }
+
+        &__data {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .page-howwork {
+        &__wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        &__list {
+            justify-content: space-between;
+        }
+
+        &__item {
+            width: 45%;
+        }
+    }
+
+    .expertise,
+    .technology {
+        &::before {
+            background-size: contain;
         }
     }
 }
