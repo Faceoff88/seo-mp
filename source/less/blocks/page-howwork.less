@@ -196,6 +196,22 @@
 }
 
 @media (min-width: @tablet-width) {
+    .expertise {
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 200px;
+            left: 0;
+            background-image: url('../img/algoritm.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
     .audit-form {
         &__list {
             justify-content: space-between;
@@ -233,6 +249,17 @@
     .technology {
         &::before {
             background-size: contain;
+        }
+    }
+
+    .expertise {
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 400px;
+            height: 400px;
+            top: 100px;
         }
     }
 }
