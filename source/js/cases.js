@@ -8,7 +8,6 @@ for (let i = 0; i < casesMini.length; i++) {
     const element = casesMini[i];
     element.addEventListener('click', function(e) {
         modalCase.classList.add('modal-case__active');
-        var theTarget = e.target;
         let celem = element.cloneNode(true);
         var count = element.childNodes.length;
 
@@ -16,7 +15,7 @@ for (let i = 0; i < casesMini.length; i++) {
             for(var j = 0; j < count; j++) {
                 modalCaseWrapper.appendChild(celem.childNodes[0]);
             }
-        }, 600);
+        }, 150);
         
         closeModal.addEventListener('click', function(e){
             modalCase.classList.remove('modal-case__active');
