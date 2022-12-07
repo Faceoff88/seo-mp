@@ -41,7 +41,7 @@
         overflow: hidden;
         padding: 20px;
         border-radius: 10px;
-        transition: ease-in-out .5s;
+        transition: ease-in-out 0.3s;
         box-sizing: border-box;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
@@ -96,7 +96,7 @@
     width: 0;
     height: 0;
     opacity: 0;
-    transition: all .5s;
+    transition: ease-in-out 0.1s;
 
     &__wrapper {
         position: relative;
@@ -121,7 +121,7 @@
     width: 90%;
     height: 77%;
     opacity: 1;
-    transition: all .5s;
+    transition: ease-in-out 0.1s;
 
     .modal-case__wrapper {
         padding: 20px;
@@ -158,7 +158,7 @@ border-radius: 20px;       /* закругления плашки */
         }
     }
 
-    .modal-case {
+    .modal-case__active {
         height: 85%;
         transform: translate(-50%, -42%);
     }
@@ -173,11 +173,17 @@ border-radius: 20px;       /* закругления плашки */
     }
 
     .cases__item {
-        width: 320px;
+        width: 360px;
+        margin-bottom: 70px;
     }
 
     .cases__title {
         margin-bottom: 50px;
+    }
+
+    .modal-case {
+        max-width: 1200px;
+        height: 75%;
     }
 
     .modal-case__active {
