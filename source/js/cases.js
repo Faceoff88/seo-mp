@@ -15,7 +15,7 @@ for (let i = 0; i < casesMini.length; i++) {
             for(var j = 0; j < count; j++) {
                 modalCaseWrapper.appendChild(celem.childNodes[0]);
             }
-        }, 150);
+        }, 320);
         
         closeModal.addEventListener('click', function(e){
             modalCase.classList.remove('modal-case__active');
