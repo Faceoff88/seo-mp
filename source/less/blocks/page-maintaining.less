@@ -1,0 +1,100 @@
+.page-maintaining {
+    &__wrapper {
+        padding: 100px 20px 100px 20px;
+        position: relative;
+    }
+
+    &__title {
+        font-size: 24px;
+        color: @wbcolor;
+        font-family: Exo2, sans-serif;
+        margin-bottom: 50px;
+    }
+
+    .greeting {
+        &__title {
+            font-size: 20px;
+            line-height: 30px;
+            font-family: Exo2, sans-serif;
+        }
+
+        &__list-desk {
+            font-family: Inter, sans-serif;
+            line-height: 20px;
+        }
+        
+        ol {
+            counter-reset: item;
+            margin-left: 0;
+            padding-left: 0;
+          }
+        li {
+            display: flex;
+            align-items: center;
+            margin-left: 2em;
+            margin-bottom: 5px;
+            color: lighten(@vblackcolor, 40%);
+        }
+        li::before {
+            display: inline-block;
+            content: "";
+            counter-increment: item;
+            width: 1em;
+            height: 1em;
+            background: @gradient;
+            margin-left: -2em;
+            border-radius: 50%;
+            margin-right: 5px;
+            position: absolute;
+        }
+
+        &__text {
+            font-family: Inter, sans-serif;
+            line-height: 20px;
+        }
+    }
+
+    .useful {
+
+        &__list-desk {
+            font-size: 20px;
+            line-height: 30px;
+            font-family: Exo2, sans-serif;
+            font-weight: 600;
+        }
+
+        ol {
+            counter-reset: item;
+            margin-left: 0;
+            padding-left: 0;
+          }
+        li {
+            display: flex;
+            align-items: center;
+            margin-left: 2em;
+            margin-bottom: 10px;
+            color: lighten(@vblackcolor, 40%);
+        }
+        li::before {
+            display: inline-block;
+            content: "";
+            counter-increment: item;
+            width: 1em;
+            height: 1em;
+            background: @gradient;
+            margin-left: -2em;
+            border-radius: 50%;
+            margin-right: 5px;
+            position: absolute;
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .page-maintaining {
+        &__wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    }
+}
