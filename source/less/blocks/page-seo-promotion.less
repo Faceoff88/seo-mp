@@ -236,3 +236,88 @@
     transition: all 0.25s ease-in-out;
     animation: form-animate 1s;
 }
+
+@media (min-width: @tablet-width) {
+    .page-seo-promotion {
+        .get-revenue__btn {
+            max-width: 320px;
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .page-seo-promotion {
+        &__wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .how-work-seo {
+
+            &__list--one {
+                &::after {
+                    content: '';
+                    width: 45%;
+                    height: 100%;
+                    background-image: url(../../img/seo-promotion/seo-promotion--one.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center center;
+                    position: absolute;
+                    right: 50px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+
+            &__list--two {
+                &::after {
+                    content: '';
+                    width: 45%;
+                    height: 100%;
+                    background-image: url(../../img/seo-promotion/seo-promotion--two.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center center;
+                    position: absolute;
+                    right: 50px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+
+
+            &__item {
+                width: 40%;
+            }
+        }
+
+        .case-questions {
+            &__list {
+                position: relative;
+                &::before {
+                    content: '';
+                    width: 500px;
+                    height: 400px;
+                    background-image: url(../../img/seo-promotion/answer.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center center;
+                    position: absolute;
+                    right: 50px;
+                    top: 50px;
+                    z-index: 3;
+                }
+            }
+
+
+            &__item {
+                width: 100%;
+            }
+        }
+    }
+
+    .callback-form {
+        width: 400px;
+    }
+}
