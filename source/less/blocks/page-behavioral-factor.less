@@ -1,0 +1,51 @@
+.page-behavioral-factor {
+    &__wrapper {
+        padding: 100px 20px 0px 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__title {
+        font-size: 24px;
+        color: @wbcolor;
+        font-family: Exo2, sans-serif;
+        margin-top: 30px;
+    }
+
+    .behavioral-factor {
+        &__text {
+            font-family: Inter, sans-serif;
+            line-height: 24px;
+        }
+
+        &__image {
+            max-width: 100%;
+            margin-bottom: -5px;
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .page-behavioral-factor {
+        &__wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .behavioral-factor {
+            &__wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &__text {
+                width: 40%;
+            }
+
+            &__image {
+                width: 50%;
+            }
+        }
+    }
+}
