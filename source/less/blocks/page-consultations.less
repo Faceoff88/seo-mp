@@ -1,0 +1,56 @@
+.page-consultations {
+    &__wrapper {
+        padding: 100px 20px 100px 20px;
+        position: relative;
+    }
+
+    &__title {
+        font-size: 24px;
+        color: @wbcolor;
+        font-family: Exo2, sans-serif;
+        margin-bottom: 20px;
+    }
+
+    .present {
+        &__title {
+            font-family: Inter, sans-serif;
+            line-height: 22px;
+            color: @vblackcolor;
+            margin-bottom: 50px;
+        }
+
+        &__item {
+            font-family: Inter, sans-serif;
+            line-height: 22px;
+            color: @vblackcolor;
+            position: relative;
+            margin-left: 45px;
+            margin-bottom: 40px;
+
+            &::before {
+                content: '';
+                width: 35px;
+                height: 35px;
+                background: @gradient;
+                
+                position: absolute;
+                top: 50%;
+                left: -45px;
+                transform: translateY(-50%);
+                animation: submenu-animate 0.25s ease-in-out;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                
+            }
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .page-consultations {
+
+        &__wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    }
+}
