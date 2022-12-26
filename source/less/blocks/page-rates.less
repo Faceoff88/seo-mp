@@ -1,0 +1,129 @@
+.page-rates {
+    &__wrapper {
+        padding: 100px 20px 100px 20px;
+        position: relative;
+    }
+
+    &__title {
+        font-size: 24px;
+        color: @wbcolor;
+        font-family: Exo2, sans-serif;
+        margin-bottom: 20px;
+    }
+
+    .cost {
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+            background: @gradient-three;
+            border-radius: 10px;
+            margin-bottom: 40px;
+
+            &-title {
+                font-size: 20px;
+                color: #ffffff;
+                font-family: Exo2, sans-serif;
+            }
+
+            &-price {
+                font-size: 18px;
+                color: #ffffff;
+                font-family: Inter, sans-serif;
+                font-weight: 600;
+            }
+
+            &-sublist,
+            &-text {
+                color: #ffffff;
+                font-family: Inter, sans-serif;
+                line-height: 22px;
+                font-weight: 500;
+            }
+
+            &:nth-child(1) {
+                background: @wbcolor-two;
+            }
+
+            &:nth-child(3) {
+                background: @gradient-two;
+            }
+        }
+    }
+
+    .example {
+        &__title {
+            font-size: 24px;
+            color: @wbcolor;
+            font-family: Exo2, sans-serif;
+            margin-bottom: 20px;
+        }
+
+        &__name {
+            font-size: 18px;
+            color: @ozoncolor;
+            font-family: Exo2, sans-serif;
+        }
+
+        &__text {
+            font-family: Inter, sans-serif;
+            line-height: 22px;
+            font-weight: 500;
+            color: @vblackcolor;
+        }
+    }
+
+    .clarification {
+        &__title {
+            font-size: 20px;
+            color: @vblackcolor;
+            font-family: Exo2, sans-serif;
+        }
+
+        &__item{
+            font-family: Inter, sans-serif;
+            line-height: 22px;
+            font-weight: 500;
+            color: @vblackcolor;
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .page-rates {
+        &__wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cost {
+
+            &__list {
+                justify-content: space-between;
+            }
+
+            &__item {
+                width: 48%;
+                height: 520px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: start;
+                
+                &:last-child {
+                    width: 100%;
+                    padding-right: 20px;
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+}
